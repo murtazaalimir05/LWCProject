@@ -1,0 +1,9 @@
+<template>
+<lightning-card title="MY COMPONENT 12"></lightning-card>
+
+<lightning-input type="search" value={searchkeyword} onchange={handleKeyChange}></lightning-input>
+    <template if:true={mywiremethod.data}>
+    <lightning-datatable key-field="Id" data={mywiremethod.data} columns={cols} hide-checkbox-column="true"></lightning-datatable>
+    </template>
+
+</template>
